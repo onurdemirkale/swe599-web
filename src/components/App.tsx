@@ -1,9 +1,17 @@
+// Libraries
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
+
+// Components
+import Header from './Header';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>SWE599 Client Application</h1>
+      <BrowserRouter>
+        <Header />
+        <h1>SWE599 Client Application</h1>
+      </BrowserRouter>
     </div>
   );
 };
